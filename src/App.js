@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Footer from "./composants/footer";
 import Navigation from "./composants/navbar";
 import Locataire from "./pages/locataire";
+import Location from "./pages/location";
+
 import {Connexion} from "./pages/connexion";
 import {Inscription} from "./pages/inscripBailleur";
 
@@ -17,6 +19,8 @@ const App = () => (
       
       <Switch>
       	<Route path='/locataire'component={Locataire} />
+      	<Route path='/location'component={Location} />
+
       	<Route path='/connexion'component={Connexion} />
       	<Route path='/inscription'component={Inscription} />
 
