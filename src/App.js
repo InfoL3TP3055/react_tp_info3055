@@ -6,8 +6,7 @@ import Footer from "./composants/footer";
 import Navigation from "./composants/navbar";
 import Locataire from "./pages/locataire";
 import {Connexion} from "./pages/connexion";
-
-
+import {Inscription} from "./pages/inscripBailleur";
 
 
 const App = () => (
@@ -19,6 +18,7 @@ const App = () => (
       <Switch>
       	<Route path='/locataire'component={Locataire} />
       	<Route path='/connexion'component={Connexion} />
+      	<Route path='/inscription'component={Inscription} />
 
 
 
