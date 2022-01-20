@@ -1,21 +1,21 @@
 import React from 'react';
-import {Sidebar} from "../composants/sidebar";
+import {Sidebarbailleur} from "../composants/sidebarbailleur";
 
-import {Location} from "../composants/location";
+import {Locaux} from "../composants/locaux";
 
                         
-export class Locataire extends React.Component {
+export class AllLocaux extends React.Component {
     render(){
         return (
 
             <div>
             <div className="container-fluid ">
             <div className='row'>
-                    <div className='col-lg-2'  id="sidebar-wrapper">     
-                      <Sidebar /></div>
+                    <div className='col-lg-2 p-0'  id="sidebar-wrapper">     
+                      <Sidebarbailleur /></div>
                     
                     <div className='offset-lg-1 col-lg-9 d-flex justify-content-center' id="page-content-wrapper">
-                        <Location/>
+                        <Locaux/>
                     </div>
             </div>   
 
@@ -27,4 +27,4 @@ export class Locataire extends React.Component {
         ); 
     }     
 };
-export default Locataire;
+export default AllLocaux;

@@ -1,8 +1,8 @@
 import React from 'react';
-import {Sidebar} from "../composants/sidebar";
+import {Sidebarbailleur} from "../composants/sidebarbailleur";
 
                         
-export class Locataire extends React.Component {
+export class Bailleur extends React.Component {
     render(){
         return (
 
@@ -10,7 +10,7 @@ export class Locataire extends React.Component {
             <div className="container-fluid ">
             <div className='row'>
                     <div className='col-lg-2'  id="sidebar-wrapper">     
-                      <Sidebar /></div>
+                      <Sidebarbailleur/></div>
                     
                    
             </div>   
@@ -23,4 +23,4 @@ export class Locataire extends React.Component {
         ); 
     }     
 };
-export default Locataire;
+export default Bailleur;
