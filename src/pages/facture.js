@@ -3,10 +3,10 @@ import {Sidebarbailleur} from "../composants/sidebarbailleur";
 import NavigationD from "../composants/navbarD";
 
 
-import {Proprietes} from "../composants/propriétés";
+import {Facture} from "../composants/facture";
 
                         
-export class ListProp extends React.Component {
+export class Factures extends React.Component {
     render(){
         return (
 
@@ -18,7 +18,7 @@ export class ListProp extends React.Component {
                       <Sidebarbailleur /></div>
                     
                     <div className='offset-lg-1 col-lg-9 d-flex justify-content-center' id="page-content-wrapper">
-                        <Proprietes/>
+                        <Facture/>
                     </div>
             </div>   
 
@@ -30,4 +30,4 @@ export class ListProp extends React.Component {
         ); 
     }     
 };
-export default ListProp;
+export default Factures;

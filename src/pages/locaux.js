@@ -1,5 +1,7 @@
 import React from 'react';
 import {Sidebarbailleur} from "../composants/sidebarbailleur";
+import NavigationD from "../composants/navbarD";
+
 
 import {Locaux} from "../composants/locaux";
 
@@ -9,6 +11,7 @@ export class AllLocaux extends React.Component {
         return (
 
             <div>
+            <NavigationD/>
             <div className="container-fluid ">
             <div className='row'>
                     <div className='col-lg-2 p-0'  id="sidebar-wrapper">     

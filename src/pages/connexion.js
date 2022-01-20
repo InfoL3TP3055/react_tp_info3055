@@ -2,6 +2,8 @@ import React from "react";
 import 'bootstrap/dist/css/bootstrap.css';
 import axios from 'axios';
 import Fond from "../images/fond.png";
+import Navigation from "../composants/navbar";
+
 
 
 
@@ -38,6 +40,7 @@ submitHandler = e => {
 		const {username, password} = this.state
 		return (
 			<div>
+			<Navigation/>
 			<div style={{backgroundImage: 'url('+Fond+')', backgroundSize:'cover'}} >
 
 		    	<div className="container-fluid ">

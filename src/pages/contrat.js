@@ -2,11 +2,10 @@ import React from 'react';
 import {Sidebarbailleur} from "../composants/sidebarbailleur";
 import NavigationD from "../composants/navbarD";
 
-
-import {Proprietes} from "../composants/propriétés";
+import {Contrat} from "../composants/contrat";
 
                         
-export class ListProp extends React.Component {
+export class AllContrat extends React.Component {
     render(){
         return (
 
@@ -18,7 +17,7 @@ export class ListProp extends React.Component {
                       <Sidebarbailleur /></div>
                     
                     <div className='offset-lg-1 col-lg-9 d-flex justify-content-center' id="page-content-wrapper">
-                        <Proprietes/>
+                        <Contrat/>
                     </div>
             </div>   
 
@@ -30,4 +29,4 @@ export class ListProp extends React.Component {
         ); 
     }     
 };
-export default ListProp;
+export default AllContrat;

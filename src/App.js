@@ -3,7 +3,7 @@ import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Footer from "./composants/footer";
-import Navigation from "./composants/navbar";
+
 import Locataire from "./pages/locataire";
 import Location from "./pages/location";
 import Bailleur from "./pages/bailleur";
@@ -13,6 +13,10 @@ import ListProp from "./pages/propriete";
 import NouvelleP from "./pages/newproprite";
 import AllLocaux from "./pages/locaux";
 import NouveauLoc from "./pages/newlocal";
+import AllContrat from "./pages/contrat";
+import NouveauContrat from "./pages/newcontrat";
+import Factures from "./pages/facture";
+
 
 import {Connexion} from "./pages/connexion";
 import {Inscription} from "./pages/inscripBailleur";
@@ -21,9 +25,7 @@ import {Inscription} from "./pages/inscripBailleur";
 const App = () => (
   <div className="App">
     <Router>
-    <div>
-    <Navigation/>
-      
+    <div>      
       <Switch>
       	<Route path='/locataire'component={Locataire} />
       	<Route path='/location'component={Location} />
@@ -34,6 +36,10 @@ const App = () => (
         <Route path='/newprop'component={NouvelleP} />
         <Route path='/locaux'component={AllLocaux} />
         <Route path='/newlocal'component={NouveauLoc} />
+        <Route path='/contrat'component={AllContrat} />
+
+        <Route path='/newcontrat'component={NouveauContrat} />
+        <Route path='/facture'component={Factures} />
 
 
       	<Route path='/connexion'component={Connexion} />

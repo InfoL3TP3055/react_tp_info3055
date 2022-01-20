@@ -34,15 +34,18 @@ import { NavLink } from 'react-router-dom';
             <NavLink exact to="/locaux" activeClassName="activeClicked">
               <CDBSidebarMenuItem icon="table">Mes locaux</CDBSidebarMenuItem>
             </NavLink>
-            <NavLink exact to="/profile" activeClassName="activeClicked">
+            <NavLink exact to="/#" activeClassName="activeClicked">
               <CDBSidebarMenuItem icon="user">Profile page</CDBSidebarMenuItem>
             </NavLink>
-            <NavLink exact to="/analytics" activeClassName="activeClicked">
+            <NavLink exact to="/Contrat" activeClassName="activeClicked">
               <CDBSidebarMenuItem icon="chart-line">Contrats</CDBSidebarMenuItem>
             </NavLink>
 
-            <NavLink exact to="/hero404" target="_blank" activeClassName="activeClicked">
+            <NavLink exact to="/facture" target="_blank" activeClassName="activeClicked">
               <CDBSidebarMenuItem icon="exclamation-circle">Factures</CDBSidebarMenuItem>
+            </NavLink>
+            <NavLink exact to="/#" activeClassName="activeClicked">
+              <CDBSidebarMenuItem icon="user">Deconnexion</CDBSidebarMenuItem>
             </NavLink>
           </CDBSidebarMenu>
         </CDBSidebarContent>
