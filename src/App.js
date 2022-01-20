@@ -2,6 +2,13 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+/*import "bootstrap/dist/css/bootstrap.min.css";
+
+import BailleurList from './composants/Composant_bailleur/BailleurList';
+import Bailleur from './composants/Composant_bailleur/Bailleur';
+import AddBailleur from './composants/Composant_bailleur/AddBailleur';
+*/
 import Footer from "./composants/footer";
 import Navigation from "./composants/navbar";
 import Locataire from "./pages/locataire";
@@ -10,8 +17,8 @@ import Location from "./pages/location";
 
 import {Connexion} from "./pages/connexion";
 import {Inscription} from "./pages/inscripBailleur";
-
-/* class App extends Component {
+/*
+class App extends Component {
   render() {
     return (
       <div>

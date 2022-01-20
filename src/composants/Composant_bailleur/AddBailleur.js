@@ -105,6 +105,97 @@ export default class AddBailleur extends Component {
   }
 
   render() {
-    // ...
+    return (
+      <div className="submit-form">
+        {this.state.submitted ? (
+          <div>
+            <h4>votre enregistrement est successfully!</h4>
+            <button className="btn btn-success" onClick={this.newBailleur}>
+              Ajouter
+            </button>
+          </div>
+        ) : (
+          <div>
+            <div className="form-group">
+              <label htmlFor="username">Username</label>
+              <input
+                type="text"
+                className="form-control"
+                id="username"
+                required
+                value={this.state.username}
+                onChange={this.onChangeUsername}
+                name="username"
+              />
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="email">Email</label>
+              <input
+                type="text"
+                className="form-control"
+                id="email"
+                required
+                value={this.state.email}
+                onChange={this.onChangeEmail}
+                name="email"
+              />
+            </div>
+            <div className="form-group">
+              <label htmlFor="password">Mot de passe</label>
+              <input
+                type="text"
+                className="form-control"
+                id="password"
+                required
+                value={this.state.password}
+                onChange={this.onChangePassword}
+                name="password"
+              />
+            </div>
+            <div className="form-group">
+              <label htmlFor="proffession">Entrer la proffession</label>
+              <input
+                type="text"
+                className="form-control"
+                id="proffession"
+                required
+                value={this.state.proffession}
+                onChange={this.onChangeProffession}
+                name="proffession"
+              />
+            </div>
+            <div className="form-group">
+              <label htmlFor="num_tel">Numero de telephone</label>
+              <input
+                type="text"
+                className="form-control"
+                id="num_tel"
+                required
+                value={this.state.num_tel}
+                onChange={this.onChangeNum_tel}
+                name="num_tel"
+              />
+            </div>
+            <div className="form-group">
+              <label htmlFor="num_cni">numero Cni</label>
+              <input
+                type="text"
+                className="form-control"
+                id="num_cni"
+                required
+                value={this.state.num_cni}
+                onChange={this.onChangeNum_cni}
+                name="num_cni"
+              />
+            </div>
+
+            <button onClick={this.saveBailleur} className="btn btn-success">
+              Enregistrer
+            </button>
+          </div>
+        )}
+      </div>
+    );
   }
 }

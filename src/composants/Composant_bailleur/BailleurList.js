@@ -13,7 +13,7 @@ export default class BailleurList extends Component {
     this.searchUsername = this.searchUsername.bind(this);
 
     this.state = {
-      Bailleurs: [],
+      bailleurs: [],
       currentBailleur: null,
       currentIndex: -1,
       searchUsername: ""
