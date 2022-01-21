@@ -3,11 +3,11 @@ import React from 'react';
 
 const Footer = () => (
     <div>
-    <footer class=" text-center text-lg-start footer bg-light" >
+    <footer class=" text-center text-lg-start footer" style={{backgroundColor:"darkgray"}}>
           <div class="container p-4 ">
             <div class="row">
               <div class="col-lg-4">
-                <h3 class="">Our address</h3>
+                <h3 class="">Nos addresses</h3>
 
                 <i class="fas fa-map-marker-alt "></i>
                 <span class="ms-1 d-sm-inline text-dark">Yaoundé </span>
@@ -25,21 +25,21 @@ const Footer = () => (
               </div>
 
               <div class="col-lg-4 col-md-6 mb-4 mb-md-0 ">
-                <h3 class=" ">Quick access</h3>
+                <h3 class=" "> Accès rapide</h3>
 
                <a href="/" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
                 <i class="fas fa-angle-right"></i>
-                <span class="ms-1  d-sm-inline text-dark">Home</span></a>
+                <span class="ms-1  d-sm-inline text-dark">Accueil</span></a>
                 
-                <a href="/#def" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                <a href="/#avtg" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
                 <i class="fas fa-angle-right "></i>
-                <span class="ms-1  d-sm-inline text-dark">About</span></a>
+                <span class="ms-1  d-sm-inline text-dark">Avantages</span></a>
                 
-                <a href="entreprise" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                <a href="/resa" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
                 <i class="fas fa-angle-right "></i>
-                <span class="ms-1  d-sm-inline text-dark">Partners</span></a>
+                <span class="ms-1  d-sm-inline text-dark">Reservation</span></a>
                 
-                <a href="/#con" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                <a href="/contact" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
                 <i class="fas fa-angle-right "></i>
                 <span class="ms-1  d-sm-inline text-dark">Contact</span></a>
                 
@@ -48,7 +48,7 @@ const Footer = () => (
               <div class="col-lg-4 col-md-6 mb-4 mb-md-0"  >
                 <h3 class="">Newsletter</h3>
 
-                <p class="py-2"> subscribe to our newsletter and stay informed about the management of trainees.</p>
+                <p class="py-2"> suscrivez à notre newsletter pour recevoir l'actualité par rapport à notre service de gestion locative .</p>
               <form >
                   <div class="input-group border ">
                     <input type="text" id = "email" name="email" value = "" required class="form-control bg-transparent " placeholder="your e-mail address"></input>
@@ -63,7 +63,7 @@ const Footer = () => (
           </div>
           <div class="text-center  p-4 bg-white " >
             © 2022 Copyright:
-            <a  href= "https://yaknema.com/" class="" >uy1.com</a>
+            <a  href= "https://uy1.com/" class="" >uy1.com</a>
           </div>
 
         </footer>

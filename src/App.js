@@ -18,6 +18,8 @@ import NouveauLoc from "./pages/newlocal";
 import AllContrat from "./pages/contrat";
 import NouveauContrat from "./pages/newcontrat";
 import Factures from "./pages/facture";
+import {Reservation} from "./pages/reservation";
+import {Contact} from "./pages/contact";
 
 
 import {Connexion} from "./pages/connexion";
@@ -29,7 +31,7 @@ const App = () => (
     <Router>
     <div>      
       <Switch>
-      <Route path='/'component={Accueil} />
+      <Route path='/' exact component={Accueil} />
       	<Route path='/locataire'component={Locataire} />
       	<Route path='/location'component={Location} />
         <Route path='/bailleur'component={Bailleur} />
@@ -40,7 +42,9 @@ const App = () => (
         <Route path='/locaux'component={AllLocaux} />
         <Route path='/newlocal'component={NouveauLoc} />
         <Route path='/contrat'component={AllContrat} />
+        <Route path='/reservation'component={Reservation} />
         
+        <Route path='/contact'component={Contact} />
 
         <Route path='/newcontrat'component={NouveauContrat} />
         <Route path='/facture'component={Factures} />

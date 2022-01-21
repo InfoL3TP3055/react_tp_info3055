@@ -36,8 +36,8 @@ export class Location extends React.Component {
                     <p className='text-left'>Quartier: Bastos</p>
                     <h5 className='text-danger text-center'>Prix: 200 000FCFA/mois</h5>
                     <div className="row">
-                        <div className="py-3 d-flex justify-content-center">
-                            <button type="submit" className="btn col-lg-6  rounded text-light" style={{backgroundColor: '#01D758'}}>Reserver</button>
+                         <div className="py-3 d-flex justify-content-center">
+                            <a href='/reservation'><button type="submit" className="btn   rounded text-light" style={{backgroundColor: '#01D758'}}>Reserver</button></a>
                         </div>
                     </div>
                     <div className="pt-4"></div>
@@ -50,8 +50,8 @@ export class Location extends React.Component {
                         <p className='text-left'>Quartier: Jouvence</p>
                         <h5 className='text-danger text-center'>Prix:100 000FCFA/mois</h5>
                         <div className="row">
-                        <div className="py-3 d-flex justify-content-center">
-                            <button type="submit" className="btn col-lg-6  rounded text-light" style={{backgroundColor: '#01D758'}}>Reserver</button>
+                         <div className="py-3 d-flex justify-content-center">
+                            <a href='/reservation'><button type="submit" className="btn   rounded text-light" style={{backgroundColor: '#01D758'}}>Reserver</button></a>
                         </div>
                     </div>
                     </div>
@@ -63,8 +63,8 @@ export class Location extends React.Component {
                     <p className='text-left'>Quartier: Nkomo</p>
                     <h5 className='text-danger text-center'>Prix: 150 000FCFA/mois</h5>
                     <div className="row">
-                        <div className="py-3 d-flex justify-content-center">
-                            <button type="submit" className="btn col-lg-6  rounded text-light" style={{backgroundColor: '#01D758'}}>Reserver</button>
+                         <div className="py-3 d-flex justify-content-center">
+                            <a href='/reservation'><button type="submit" className="btn   rounded text-light" style={{backgroundColor: '#01D758'}}>Reserver</button></a>
                         </div>
                     </div>
                     <div className="pt-4"></div>
@@ -78,7 +78,7 @@ export class Location extends React.Component {
                     <h5 className='text-danger text-center'>Prix: 190 000FCFA/mois</h5>
                     <div className="row">
                         <div className="py-3 d-flex justify-content-center">
-                            <button type="submit" className="btn col-lg-6  rounded text-light" style={{backgroundColor: '#01D758'}}>Reserver</button>
+                            <a href='/reservation'><button type="submit" className="btn   rounded text-light" style={{backgroundColor: '#01D758'}}>Reserver</button></a>
                         </div>
                         
                     </div>

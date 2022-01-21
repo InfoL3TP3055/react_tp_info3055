@@ -48,7 +48,7 @@ submitHandler = e => {
 		        	<div className="py-2"></div>		            
 		          	<div className="d-flex justify-content-center">
 
-			            <div className="border col-lg-6 rounded " style={{boxShadow: "0px 0px 9px darkgray"}}>
+			            <div className="border col-lg-4 rounded " style={{boxShadow: "0px 0px 9px darkgray"}}>
 				            <div className="row">
 					            <form onSubmit={this.submitHandler} method='POST'>
 					            	<h2 className="header text-center py-3 " style={{fontFamily: 'initial'}}>Inscription</h2> 	
