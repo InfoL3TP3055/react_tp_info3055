@@ -29,7 +29,7 @@ const App = () => (
     <Router>
     <div>      
       <Switch>
-      <Route path='/accueil'component={Accueil} />
+      <Route path='/'component={Accueil} />
       	<Route path='/locataire'component={Locataire} />
       	<Route path='/location'component={Location} />
         <Route path='/bailleur'component={Bailleur} />
