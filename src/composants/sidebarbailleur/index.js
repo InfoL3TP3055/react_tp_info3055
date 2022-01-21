@@ -10,7 +10,7 @@ import {
 import { NavLink } from 'react-router-dom';
 
 
-  export class Sidebar extends React.Component {
+  export class Sidebarbailleur extends React.Component {
   render() {
   return (
     <div >
@@ -19,25 +19,31 @@ import { NavLink } from 'react-router-dom';
       <CDBSidebar textColor="#fff" backgroundColor="black">
         <CDBSidebarHeader style={{backgroundColor:'#4CAF50' }} prefix={<i className="fa fa-bars fa-large"></i>}>
           <a href="/" className="text-decoration-none" style={{ color: 'inherit'}}>
-            Locataire
+            Bailleur
           </a>
         </CDBSidebarHeader>
 
         <CDBSidebarContent className="sidebar-content">
           <CDBSidebarMenu>
-            <NavLink exact to="/location" activeClassName="activeClicked">
-              <CDBSidebarMenuItem icon="columns">Reserver un local</CDBSidebarMenuItem>
+            <NavLink exact to="/listlocataire" activeClassName="activeClicked">
+              <CDBSidebarMenuItem icon="columns">Mes locataires</CDBSidebarMenuItem>
             </NavLink>
-            <NavLink exact to="/tables" activeClassName="activeClicked">
-              <CDBSidebarMenuItem icon="table">Tables</CDBSidebarMenuItem>
+            <NavLink exact to="/propriete" activeClassName="activeClicked">
+              <CDBSidebarMenuItem icon="table">Mes propriétés</CDBSidebarMenuItem>
             </NavLink>
-            <NavLink exact to="/profile" activeClassName="activeClicked">
+            <NavLink exact to="/locaux" activeClassName="activeClicked">
+              <CDBSidebarMenuItem icon="table">Mes locaux</CDBSidebarMenuItem>
+            </NavLink>
+            <NavLink exact to="/#" activeClassName="activeClicked">
               <CDBSidebarMenuItem icon="user">Profile page</CDBSidebarMenuItem>
             </NavLink>
-            <NavLink exact to="/analytics" activeClassName="activeClicked">
-              <CDBSidebarMenuItem icon="chart-line">Analytics</CDBSidebarMenuItem>
+            <NavLink exact to="/Contrat" activeClassName="activeClicked">
+              <CDBSidebarMenuItem icon="chart-line">Contrats</CDBSidebarMenuItem>
             </NavLink>
 
+            <NavLink exact to="/facture" target="_blank" activeClassName="activeClicked">
+              <CDBSidebarMenuItem icon="exclamation-circle">Factures</CDBSidebarMenuItem>
+            </NavLink>
             <NavLink exact to="/#" activeClassName="activeClicked">
               <CDBSidebarMenuItem icon="user">Deconnexion</CDBSidebarMenuItem>
             </NavLink>

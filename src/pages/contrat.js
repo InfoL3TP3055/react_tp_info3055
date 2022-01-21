@@ -1,12 +1,11 @@
 import React from 'react';
-import {Sidebar} from "../composants/sidebar";
-
-import {Location} from "../composants/location";
+import {Sidebarbailleur} from "../composants/sidebarbailleur";
 import NavigationD from "../composants/navbarD";
 
+import {Contrat} from "../composants/contrat";
 
                         
-export class Locataire extends React.Component {
+export class AllContrat extends React.Component {
     render(){
         return (
 
@@ -15,10 +14,10 @@ export class Locataire extends React.Component {
             <div className="container-fluid ">
             <div className='row'>
                     <div className='col-lg-2 p-0'  id="sidebar-wrapper">     
-                      <Sidebar /></div>
+                      <Sidebarbailleur /></div>
                     
                     <div className='offset-lg-1 col-lg-9 d-flex justify-content-center' id="page-content-wrapper">
-                        <Location/>
+                        <Contrat/>
                     </div>
             </div>   
 
@@ -30,4 +29,4 @@ export class Locataire extends React.Component {
         ); 
     }     
 };
-export default Locataire;
+export default AllContrat;
