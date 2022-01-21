@@ -7,6 +7,8 @@ import Footer from "./composants/footer";
 import Locataire from "./pages/locataire";
 import Location from "./pages/location";
 import Bailleur from "./pages/bailleur";
+import Accueil from "./pages/accueil";
+
 import Locataires from "./pages/listlocataire";
 import NouveauLocataire from "./pages/newlocataire";
 import ListProp from "./pages/propriete";
@@ -27,6 +29,7 @@ const App = () => (
     <Router>
     <div>      
       <Switch>
+      <Route path='/accueil'component={Accueil} />
       	<Route path='/locataire'component={Locataire} />
       	<Route path='/location'component={Location} />
         <Route path='/bailleur'component={Bailleur} />
@@ -37,6 +40,7 @@ const App = () => (
         <Route path='/locaux'component={AllLocaux} />
         <Route path='/newlocal'component={NouveauLoc} />
         <Route path='/contrat'component={AllContrat} />
+        
 
         <Route path='/newcontrat'component={NouveauContrat} />
         <Route path='/facture'component={Factures} />

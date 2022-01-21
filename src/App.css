@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+.cadre{
+
+  background-color: black;
+  opacity:0.6;
+}
+.vague{
+
+  background-color: green;
+  opacity:0.6;
+}

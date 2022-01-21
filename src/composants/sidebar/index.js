@@ -25,21 +25,14 @@ import { NavLink } from 'react-router-dom';
 
         <CDBSidebarContent className="sidebar-content">
           <CDBSidebarMenu>
+          <NavLink exact to="/profile" activeClassName="activeClicked">
+              <CDBSidebarMenuItem icon="user">Mon compte</CDBSidebarMenuItem>
+            </NavLink>
             <NavLink exact to="/location" activeClassName="activeClicked">
               <CDBSidebarMenuItem icon="columns">Reserver un local</CDBSidebarMenuItem>
             </NavLink>
-            <NavLink exact to="/tables" activeClassName="activeClicked">
-              <CDBSidebarMenuItem icon="table">Tables</CDBSidebarMenuItem>
-            </NavLink>
-            <NavLink exact to="/profile" activeClassName="activeClicked">
-              <CDBSidebarMenuItem icon="user">Profile page</CDBSidebarMenuItem>
-            </NavLink>
-            <NavLink exact to="/analytics" activeClassName="activeClicked">
-              <CDBSidebarMenuItem icon="chart-line">Analytics</CDBSidebarMenuItem>
-            </NavLink>
-
             <NavLink exact to="/#" activeClassName="activeClicked">
-              <CDBSidebarMenuItem icon="user">Deconnexion</CDBSidebarMenuItem>
+              <CDBSidebarMenuItem icon="fas fa-sign-out-alt">Deconnexion</CDBSidebarMenuItem>
             </NavLink>
           </CDBSidebarMenu>
         </CDBSidebarContent>
